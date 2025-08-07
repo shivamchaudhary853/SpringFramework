@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("org/Shivam/beaninheritance/bconfig.xml");
         Employee employee = applicationContext.getBean("emp1",Employee.class);
-        System.out.println(employee);
+        Employee employee1 = applicationContext.getBean("emp1", Employee.class);
+
+        System.out.println(employee.hashCode());
+        System.out.println(employee1.hashCode());
     }
 }

@@ -1,5 +1,8 @@
 package org.Shivam.beaninheritance;
 
+import org.springframework.context.annotation.Scope;
+
+
 public class Employee extends person{
     String email;
     String empcode;
