@@ -1,5 +1,8 @@
 package org.Shivam.lifecycle;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 public class LifeCycle {
     String query;
 
@@ -13,6 +16,7 @@ public class LifeCycle {
     public void initMethod(){
         System.out.println("initialising the DB connection");
     }
+
     public void destroyMethod(){
         System.out.println("closing the DB operation");
     }
